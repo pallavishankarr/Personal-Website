@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pallavi Shankar</title>
+    <title>Pallavi Shankar Portfolio</title>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 
@@ -11,7 +11,7 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar_container">
-            <a href="/" id="navbar_logo">LOGO</a>
+            <div class="logo">Pallavi Shankar</div>
             <div class="navbar_toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -33,6 +33,37 @@
             </ul>
         </div>
     </nav>
+
+    <section id="profile"> 
+        <div class="section_pic_container">
+            <img src="./assets/Headshot.png" alt="Pallavi Shankar Profile Picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_1">Hello, I'm</p>
+            <h1 class="title">Pallavi Shankar</h1>
+            <p class="section_text_p2">Computer Science and Cognitive Psychology Student</p>
+
+            <div class="btn_container">
+                <button class="btn_1" onclick="window.open('./assets/resume.pdf')"> 
+                    Download CV
+                </button>
+                <button class="btn_2" onclick="location.href = './#contact'"> 
+                    Contact Info </button>
+            </div>
+
+            <div id="socials_container">
+                <img src="./assets/linkedin.png" 
+                alt="My Linkedin Profie"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/pallavi-shankar-34927a215'"/>
+                <img src="./assets/github.png" 
+                alt="My GitHub Profie"
+                class="icon" 
+                onclick="location.href='https://www.github.com/pallavishankarr'"/>
+            </div>
+            
+        </div>
+    </section>
     <script src="app.js"></script>
 </body>
 </html>
