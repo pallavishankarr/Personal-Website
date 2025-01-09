@@ -22,26 +22,26 @@
                     <a href="/" class="navbar_links">Home</a>
                 </li>
                 <li class="navbar_item">
-                    <a href="/" class="navbar_links">About Me</a>
+                    <a href="#about" class="navbar_links">About</a>
                 </li>
                 <li class="navbar_item">
                     <a href="/projects.html" class="navbar_links">Projects</a>
                 </li>
                 <li class="navbar_btn">
-                    <a href="/" class="button">Contact</a>
+                    <a href="#contact" class="button">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-
+    <!--Profile-->
     <section id="profile"> 
         <div class="section_pic_container">
             <img src="./assets/Headshot.png" alt="Pallavi Shankar Profile Picture">
         </div>
         <div class="section_text">
-            <p class="section_text_1">Hello, I'm</p>
+            <p class="section_text_p1">Hello, I'm</p>
             <h1 class="title">Pallavi Shankar</h1>
-            <p class="section_text_p2">Computer Science and Cognitive Psychology Student</p>
+            <p class="section_text_p2">Computer Science and Cognitive Psychology Student at Northeastern University</p>
 
             <div class="btn_container">
                 <button class="btn_1" onclick="window.open('./assets/resume.pdf')"> 
@@ -64,6 +64,45 @@
             
         </div>
     </section>
+    <!--About-->
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section_container">
+            <div class="section_pic_container">
+                <img src="./assets/Headshot.png" alt="profile picture"
+                class="about pic"
+                />
+            </div>
+            <div class="about_details_container">
+                <div class="about_containers">
+                    <div class="details_container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="app.js"></script>
+    <!--Contact Page-->
+    <section id="contact">
+        <div class="contact_container">
+            <form action="" class="contact_left">
+                <div class="contact_left_title">
+                    <h2> Get in touch</h2>
+                    <hr>
+                </div>
+                <input type="text" name="name" placeholder="Pallavi Shankar" class="contact_inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact_inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact_inputs required"></textarea>
+                <button type="submit">submit <img src="assets/arrow_icon.png"> </button>
+            </form>
+            <div class="contact_right">
+                <img src="/assets/right_img.png">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
