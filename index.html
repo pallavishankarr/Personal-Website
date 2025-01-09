@@ -89,19 +89,17 @@
     <!--Contact Page-->
     <section id="contact">
         <div class="contact_container">
-            <form action="" class="contact_left">
-                <div class="contact_left_title">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact_form">
+                <div class="contact_form_title">
                     <h2> Get in touch</h2>
                     <hr>
                 </div>
-                <input type="text" name="name" placeholder="Pallavi Shankar" class="contact_inputs" required>
+                <input type="hidden" name="access_key" value="8d36a68d-9679-4988-b217-94e7d908b2bf">
+                <input type="text" name="name" placeholder="Your Name" class="contact_inputs" required>
                 <input type="email" name="email" placeholder="Your Email" class="contact_inputs" required>
                 <textarea name="message" placeholder="Your Message" class="contact_inputs required"></textarea>
-                <button type="submit">submit <img src="assets/arrow_icon.png"> </button>
+                <button type="submit">Submit <img src="assets/arrow_icon.png"> </button>
             </form>
-            <div class="contact_right">
-                <img src="/assets/right_img.png">
-            </div>
         </div>
     </section>
 </body>

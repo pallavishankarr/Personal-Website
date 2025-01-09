@@ -12,6 +12,10 @@ p {
     color: black;
 }
 
+body {
+    background: #f5f5dc;
+}
+
 .navbar {
     background: #1f3623;
     height: 80px;
@@ -331,5 +335,74 @@ section {
     gap: 1rem;
 }
 
+.contact_container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px
+}
+
+.contact_form_title h2 {
+    font-weight: 600;
+    color: #1f3623;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact_form_title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #1f3623;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact_inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #1f3623;
+    border-radius: 50px;
+}
+
+.contact_form textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact_inputs:focus {
+    border: 2px solid #bc804d;
+}
+
+.contact_inputs::placeholder {
+    color: lightgrey
+}
+
+.contact_form button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color:beige;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #1f3623, #566a41);
+}
+
+.contact_form button img {
+    height: 15px;
+}
 
