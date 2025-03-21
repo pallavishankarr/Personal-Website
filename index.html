@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pallavi Shankar Portfolio</title>
     <link rel="stylesheet" href="styles.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar_container">
-            <div class="logo">Pallavi Shankar</div>
+            <a href="#profile" class="logo">Pallavi Shankar</a>
             <div class="navbar_toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -19,13 +20,10 @@
             </div>
             <ul class="navbar_menu">
                 <li class="navbar_item">
-                    <a href="/" class="navbar_links">Home</a>
+                    <a href="#profile" class="navbar_links">Home</a>
                 </li>
                 <li class="navbar_item">
-                    <a href="#about" class="navbar_links">About</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="/projects.html" class="navbar_links">Projects</a>
+                    <a href="#projects" class="navbar_links">Projects</a>
                 </li>
                 <li class="navbar_btn">
                     <a href="#contact" class="button">Contact</a>
@@ -33,6 +31,7 @@
             </ul>
         </div>
     </nav>
+
     <!--Profile-->
     <section id="profile"> 
         <div class="section_pic_container">
@@ -64,60 +63,42 @@
             
         </div>
     </section>
-    <!--About-->
-    <section id="about">
-        <p class="section_text_p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section_container">
-            <div class="section_pic_container">
-                <img src="./assets/Headshot.png" alt="profile picture"
-                class="about pic"
-                />
-            </div>
-            <div class="about_details_container">
-                <div class="about_containers">
-                    <div class="details_container">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon"/>
-                        <h3>Experience</h3>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="app.js"></script>
 
-     <!--Experience-->
-     <section id="experience">
-        <div class="timeline_item">
-            <div class="line"></div>
-            <div class="content">
-              <h3>Co-Connect</h3>
-              <p>Project Description</p>
-              <ul>
-                <li>Project 1 Description</li>
-                <li>Project 2 Description</li>
-              </ul>
-              <div class="buttons">
-                <a href="https://example.com/demo" class="btn_demo" target="_blank">Live Demo</a>
-                <a href="https://github.com/username/repo" class="btn_github" target="_blank">GitHub</a>
-              </div>
+     <!--Projects -->
+     <section id="projects">
+        <h1 class="projects_section_title">Projects</h1> 
+        <div class="timeline">
+            <div class="timeline_container">
+                <div class="projects_text">
+                    <h2>Northeastern AI Perception Lab</h2>
+                    <small>Feb 2025 - Present</small>
+                    <p>I am currently exploring causality-driven approaches to semantic segmentation as part of my research in the Computer Vision Lab. Traditional segmentation models often rely on correlations rather than understanding true causal relationships within an image, leading to limitations in robustness and generalization. My work focuses on integrating causal inference and knowledge graphs to improve interpretability, accuracy, and adaptability in computer vision tasks. Through this research, I aim to enhance how models recognize and reason about objects and their interactions beyond pixel-level classification.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline_container">
+                <div class="projects_text">
+                    <h2>Poker Polygons</h2>
+                    <small>Jan 2025 - Feb 2025</small>
+                    <p>Poker Polygons is a strategic board game that merges poker-inspired mechanics with geometric positioning. Players place polygon-shaped cards on a grid, forming high-scoring patterns similar to poker hands while considering spatial constraints. The game challenges players to think ahead, optimizing placement to control the board and outmaneuver opponents. Built using Java, the project features robust game logic, turn-based mechanics, and a dynamic scoring system. Through this project, I explored concepts like object-oriented programming, algorithmic decision-making, and game state management, creating an engaging and interactive experience.                    </p>
+                </div>
+            </div>
+            <div class="timeline_container">
+                <div class="projects_text">
+                    <h2>Co-Connect</h2>
+                    <small>Nov 2024 - Dec 2024</small>
+                    <p>Co-Connect is a data-driven platform designed to bridge the gap between students, employers, and advisors by providing a deeper understanding of co-op experiences. Unlike traditional job platforms, it offers a dynamic post feed where students can share insights about their roles, and employers can post job opportunities. The platform features student profiles, employment status updates, and an integrated resume system, making it easier for employers to connect with potential candidates. Built using Streamlit for an interactive interface, Flask for backend logic, and MySQL for database management, Co-Connect streamlines the job search process while fostering transparency in co-op experiences.
+                        <div class="github_button">
+                            <a href="https://github.com/NiamBashambu/Co_Connect" target="_blank">
+                                <img src="./assets/github.png" alt="GitHub Repository" class="project_icon">
+                            </a>
+                        </div>
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="timeline_container">
-            <div class="timeline">
-              <div class="timeline_item">
-                <div class="line"></div>
-                <div class="content">
-                  <h3>AI Perception Lab</h3>
-                  <p>Northeastern University - Jan 2025 - Present</p>
-                  <ul>
-                    <li>Project 1 Description</li>
-                    <li>Project 2 Description</li>
-                  </ul>
-                </div>
-              </div>
     </section>
+
     <!--Contact Page-->
     <section id="contact">
         <div class="contact_container">
