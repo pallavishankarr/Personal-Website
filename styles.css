@@ -13,7 +13,7 @@ p {
 }
 
 body {
-    background: #f5f5dc;
+    background: #FAF0E6;
 }
 
 .navbar {
@@ -40,7 +40,7 @@ body {
 }
 
 .logo {
-    background-color: #f5f5dc;
+    background-color: #FAF0E6;
     background-image: linear-gradient(to top, #4f6642 0%, #f5f5dc 100%);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -99,7 +99,7 @@ body {
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f5f5dc;
+    background: #FAF0E6;
     color: #1f3623;
 }
 
@@ -157,7 +157,7 @@ body {
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background:#f5f5dc;
+        background:#FAF0E6;
     }
 
     .navbar_item {
@@ -312,7 +312,7 @@ section {
     outline: none;
     border-radius: 4px;
     background: #566a41;
-    color: #f5f5dc;
+    color: #FAF0E6;
 }
 
 .btn_1:hover, 
@@ -323,12 +323,12 @@ section {
 .btn_1, 
 .btn_2:hover {
     background: #1f3623;
-    color:#f5f5dc;
+    color:#FAF0E6;
 }
 
 .btn_1:hover {
     background: #566a41;
-    color: #f5f5dc;
+    color: #FAF0E6;
 }
 
 .btn_container {
@@ -387,7 +387,7 @@ section {
 }
 
 .contact_inputs::placeholder {
-    color: lightgrey
+    color: lightgrey;
 }
 
 .contact_form button {
@@ -395,7 +395,7 @@ section {
     align-items: center;
     padding: 15px 30px;
     font-size: 16px;
-    color:beige;
+    color: #FAF0E6;
     gap: 10px;
     border: none;
     border-radius: 50px;
@@ -405,4 +405,163 @@ section {
 .contact_form button img {
     height: 15px;
 }
+
+/* Experience Section */
+#experience {
+    background: #FAF0E6;
+    padding: 4vh 10rem;
+    margin: 4vh 0;
+    box-sizing: border-box;
+}
+
+/* Timeline Container */
+.timeline_container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; /* Increased gap for more separation */
+}
+
+/* Timeline Item */
+.timeline_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 3rem; /* Space between timeline items */
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background-color: #1f3623;
+    z-index: -1;
+    margin-top: 1rem; /* Adds top space to avoid overlap with box */
+}
+
+.content {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #888; /* Lighten text color */
+}
+
+.content h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FAF0E6; /* Lighter color for the title */
+}
+
+.content p,
+.content ul {
+    color: #888; /* Lighten color for both descriptions */
+}
+
+.content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.content ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Button Container */
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn_demo,
+.btn_github {
+    padding: 0.8rem 1.2rem;
+    background-color: #566a41;
+    color: #FAF0E6;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.btn_demo:hover,
+.btn_github:hover {
+    background-color: #1f3623;
+}
+
+/* Alternate Timeline Item Position for Better Visuals */
+.timeline_item:nth-child(even) .content {
+    margin-left: 0;
+    margin-right: 50%;
+    background: #bc804d;
+    color: white;
+}
+
+.timeline_item:nth-child(odd) .content {
+    margin-left: 50%;
+    background: #1f3623;
+    color: white;
+}
+
+.timeline_item:nth-child(even) .line {
+    left: 50%;
+    border-left: 2px solid #bc804d;
+}
+
+.timeline_item:nth-child(odd) .line {
+    left: 50%;
+    border-left: 2px solid #1f3623;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 960px) {
+    #experience {
+        padding: 4vh 2rem;
+    }
+
+    .timeline_item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .line {
+        position: static;
+        width: 100%;
+        height: 2px;
+        margin-top: 2rem;
+    }
+
+    .content {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .timeline_item:nth-child(even) .content {
+        margin-left: 0;
+        margin-right: 0;
+        background: #1f3623;
+        color: white;
+    }
+
+    .timeline_item:nth-child(odd) .content {
+        margin-left: 0;
+        margin-right: 0;
+        background: #bc804d;
+        color: white;
+    }
+}
+
 
